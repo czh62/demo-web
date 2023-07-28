@@ -12,5 +12,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    // 当生产环境浏览器版本较低时，请改为es2015
+    target: 'modules'
   }
 })
