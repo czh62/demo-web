@@ -5,7 +5,7 @@
         <el-icon v-if="subItem.meta.icon">
           <component :is="subItem.meta.icon"></component>
         </el-icon>
-        <span>{{ subItem.meta.title }}</span>
+        <span class="is-truncated">{{ subItem.meta.title }}</span>
       </template>
       <sidebar-item :menus="subItem.children" />
     </el-sub-menu>
@@ -14,7 +14,7 @@
         <component :is="subItem.meta.icon"></component>
       </el-icon>
       <template #title>
-        <span>{{ subItem.meta.title }}</span>
+        <span class="is-truncated">{{ subItem.meta.title }}</span>
       </template>
     </el-menu-item>
   </template>
@@ -39,5 +39,3 @@ const handleClickMenu = subItem => {
   router.push(subItem.path)
 }
 </script>
-
-<style lang="scss" scoped></style>

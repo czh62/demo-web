@@ -27,7 +27,6 @@
 
   .el-menu-item.is-active {
     background-color: var(--color-background-mute);
-    // border-radius: var(--vt-c-radius-2);
     color: var(--color-theme);
   }
 
@@ -42,13 +41,24 @@
     .el-menu {
       background-color: var(--color-background-soft);
 
-      .el-menu-item {
+      .el-menu-item, .el-sub-menu__title {
         text-indent: 9px;
+
+        .is-truncated {
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
       }
     }
   }
 
   &.app-menu__collapsed {
     padding: 0;
+
+    .el-sub-menu.is-active {
+      background-color: var(--color-background-mute);
+    }
   }
 }
