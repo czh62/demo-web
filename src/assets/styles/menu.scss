@@ -1,5 +1,6 @@
 .el-scrollbar {
   height: 100%;
+  width: calc(100% - 5px);
 }
 .el-scrollbar.has-logo.has-version {
   height: calc(100% - var(--height-logo) - var(--height-version)) !important;
@@ -26,7 +27,7 @@
 
   .el-menu-item.is-active {
     background-color: var(--color-background-mute);
-    border-radius: var(--vt-c-radius-2);
+    // border-radius: var(--vt-c-radius-2);
     color: var(--color-theme);
   }
 
@@ -45,5 +46,9 @@
         text-indent: 9px;
       }
     }
+  }
+
+  &.app-menu__collapsed {
+    padding: 0;
   }
 }

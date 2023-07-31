@@ -15,7 +15,7 @@
     }
 
     .el-main {
-      padding: 0 20px;
+      padding: 10px;
     }
 
     .el-footer {
@@ -33,5 +33,7 @@
   .el-aside {
     width: var(--width-aside);
     background-color: var(--color-background-soft);
+    position: relative;
+    transition: width .27s;
   }
 }
