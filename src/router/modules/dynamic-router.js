@@ -1,36 +1,25 @@
 import router from '..'
 import useAuthStore from '@/stores/modules/auth'
-import Layout from '@/layout/index.vue'
 
 // 引入 views 文件夹下所有 vue 文件
 const modules = import.meta.glob('@/views/**/*.vue')
 
 const loadView = view => modules['/src/views' + view]
 
-const initRouteComponent = routes => {
-  return routes.filter(item => {
-    if (item.component) {
-      if (item.component === 'Layout') {
-        item.component = Layout
-      } else {
-        item.component = loadView(item.component)
-      }
-    }
-    if (item.children?.length) {
-      initDynamicRouter(item.children)
-    }
-    return true
-  })
-}
-
 const initDynamicRouter = async () => {
   const authStore = useAuthStore()
   await authStore.getDynamicMenuList()
-  initRouteComponent(authStore.getTreeMenuList()).forEach(item => {
+  
+  authStore.getFlatMenuList().forEach(item => {
+    item.children && delete item.children
+    if (item.component && typeof item.component === 'string') {
+      item.component = loadView(item.component)
+    }
+
     if (item.meta.isFull) {
-      router.addRoute(item)
+      router.addRoute(item);
     } else {
-      router.addRoute('layout', item)
+      router.addRoute("layout", item);
     }
   })
 }
