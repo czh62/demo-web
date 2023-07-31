@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import useAppStore from '../../stores/modules/app'
+import useAppStore from '@/stores/modules/app'
 
 defineOptions({ name: 'AppCollapse' })
 

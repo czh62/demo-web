@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { computed, provide } from 'vue';
+import { computed, provide } from 'vue'
 import useLayoutStore from '@/stores/modules/layout'
 import useAppStore from '@/stores/modules/app'
 import Menu from './components/Menu.vue'

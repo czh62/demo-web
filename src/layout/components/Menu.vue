@@ -9,9 +9,9 @@
 
 <script setup>
 import { computed, inject } from 'vue'
+import { useRoute } from 'vue-router'
 import SidebarItem from './SidebarItem.vue'
 import useAuthStore from '@/stores/modules/auth'
-import { useRoute } from 'vue-router'
 
 defineOptions({ name: 'AppMenu' })
 
