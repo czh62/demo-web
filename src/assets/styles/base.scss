@@ -1,0 +1,85 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f6f6fb;
+  --vt-c-white-mute: #e9e9f6;
+
+  --vt-c-empty: transparent;
+
+  --vt-c-black: #000000;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #303544;
+
+  --vt-c-indigo: #303133;
+
+  --vt-c-divider-light: #E4E7ED;
+  --vt-c-divider-lighter: #EBEEF5;
+  --vt-c-divider-dark: #D4D7DE;
+  --vt-c-divider-darker: #CDD0D6;
+
+  --vt-c-text-disabled: #C0C4CC;
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: #606266;
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: #ebebeb;
+
+  --vt-c-primary: #2937ff;
+  --vt-c-success: #3ac56c;
+  --vt-c-warning: #ffab14;
+
+  --vt-c-height: 60px !important;
+  --vt-c-height-2: 30px !important;
+
+  --vt-c-radius: 8px;
+  --vt-c-radius-2: 4px;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-lighter);
+  --color-border-hover: var(--vt-c-divider-light);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  --color-text-disabled: var(--vt-c-text-disabled);
+
+  --section-gap: 160px;
+
+  --height-header: var(--vt-c-height);
+  --height-logo: var(--vt-c-height);
+
+  --height-footer: var(--vt-c-height-2);
+  --height-version: var(--vt-c-height-2);
+
+  --width-aside: 240px !important;
+
+
+  --color-theme: var(--vt-c-primary);
+}
+
+@for $i from 0 through 30 {
+  .p#{$i} { padding: 1px * $i; }
+  .pt#{$i} { padding-top: 1px * $i; }
+  .pr#{$i} { padding-right: 1px * $i; }
+  .pb#{$i} { padding-bottom: 1px * $i; }
+  .pl#{$i} { padding-left: 1px * $i; }
+
+  .m#{$i} { margin: 1px * $i; }
+  .mt#{$i} { margin-top: 1px * $i; }
+  .mr#{$i} { margin-right: 1px * $i; }
+  .mb#{$i} { margin-bottom: 1px * $i; }
+  .ml#{$i} { margin-left: 1px * $i; }
+
+  .lh#{$i} { line-height: 1px * $i; }
+}
+
+@for $i from 10 through 30 {
+  .text#{$i} {
+    font-size: $i * 1px ;
+  }
+}

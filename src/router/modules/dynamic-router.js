@@ -1,5 +1,6 @@
 import router from '..'
 import useAuthStore from '@/stores/modules/auth'
+import Layout from '@/layout/index.vue'
 
 // 引入 views 文件夹下所有 vue 文件
 const modules = import.meta.glob('@/views/**/*.vue')
