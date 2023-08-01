@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper app-vertical">
     <el-container>
-      <el-aside :style="{ width: collapsed? '69px' : '240px' }">
+      <el-aside :style="{ width: collapsed? '69px' : '220px' }">
         <Logo v-if="showLogo" />
         <Menu :collapsed="collapsed" />
         <Version v-if="showVersion" />

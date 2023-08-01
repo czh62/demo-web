@@ -3,9 +3,9 @@
   "message": "操作成功",
   "data": [
     {
-      "path": "/dashboard",
-      "name": "dashboard",
-      "component": "/dashboard/index.vue",
+      "path": "/home",
+      "name": "home",
+      "component": "/home/index.vue",
       "meta": {
         "icon": "HomeFilled",
 				"title": "系统首页",

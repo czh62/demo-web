@@ -3,7 +3,7 @@ export const staticRouter = [
     path: '/',
     name: 'layout',
     component: () => import('@/layout/index.vue'),
-    redirect: '/dashboard',
+    redirect: '/home',
     children: []
   }
 ]
