@@ -1,3 +1,17 @@
+import { isNumber } from "./is"
+
+/**
+ * @description 数字添加千分位分隔符
+ * @param {Number} num 要分隔的数字
+ * @return number | string
+ */
+export const addSeparator = num => {
+  if (typeof num != 'number') return num
+  const str = num + ''
+  const reg = /(?!^)(?=(\d{3})+$)/g
+  return str.replace(reg, ',')
+}
+
 /**
  * @description 扁平化数组对象(主要用来处理路由菜单)
  * @param {Array} menuList 所有菜单列表
@@ -24,3 +38,11 @@ export const getShowMenuList = menuList => {
     return !item.meta?.isHide
   })
 }
+
+/**
+ * @description 生成随机数
+ * @param {Number} min 最小值
+ * @param {Number} max 最大值
+ * @return number
+ */
+export const randomNum = (min, max) => Math.floor(Math.random() * (min - max) + max)
