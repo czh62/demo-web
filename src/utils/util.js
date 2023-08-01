@@ -1,5 +1,3 @@
-import { isNumber } from "./is"
-
 /**
  * @description 数字添加千分位分隔符
  * @param {Number} num 要分隔的数字
