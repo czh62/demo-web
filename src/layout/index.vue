@@ -1,7 +1,7 @@
 <template>
   <div class="app-wrapper app-vertical">
     <el-container>
-      <el-aside :style="{ width: collapsed? '69px' : '220px' }">
+      <el-aside :class="{ 'aside-collapsed': collapsed }">
         <Logo v-if="showLogo" />
         <Menu :collapsed="collapsed" />
         <Version v-if="showVersion" />
@@ -11,7 +11,7 @@
         <el-header v-if="showHeader">
         </el-header>
         <el-main><router-view /></el-main>
-        <el-footer v-if="showFooter">2023 ©️ MAGIC BOX TECHNOLOGY BY jhrestart2022 WECHAT.</el-footer>
+        <el-footer v-if="showFooter">2023 ©️ BASE VUE PROJECT USE VITE.</el-footer>
       </el-container>
     </el-container>
   </div>

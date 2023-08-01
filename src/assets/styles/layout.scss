@@ -35,5 +35,9 @@
     background-color: var(--color-background-soft);
     position: relative;
     transition: width .27s;
+
+    &.aside-collapsed {
+      width: var(--width-aside-collapsed);
+    }
   }
 }
