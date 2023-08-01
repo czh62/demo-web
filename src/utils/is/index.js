@@ -23,7 +23,7 @@ export const isArray = data => toString.call(data) === '[object Array]'
 /**
  * @description 是否是null
  */
-export const isNull = data => toString.call(data) === '[object null]'
+export const isNull = data => toString.call(data) === '[object Null]'
 
 /**
  * @description 是否是Undefined
