@@ -8,7 +8,7 @@
 
     .el-header {
       height: var(--height-header);
-      padding: 0 20px;
+      padding: 0 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -38,6 +38,9 @@
 
     &.aside-collapsed {
       width: var(--width-aside-collapsed);
+    }
+    &.aside-collapsed.show-collapse-bar {
+      width: var(--width-aside-collapsed-has-bar);
     }
   }
 }

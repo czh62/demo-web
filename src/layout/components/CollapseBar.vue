@@ -1,5 +1,5 @@
 <template>
-  <div class="collapse-wrapper">
+  <div class="collapse-wrapper--bar">
     <div class="collapse--wrapper__btn pointer" @click="appStore.collapsedChange">
     </div>
   </div>
@@ -8,13 +8,13 @@
 <script setup>
 import useAppStore from '@/stores/modules/app'
 
-defineOptions({ name: 'AppCollapse' })
+defineOptions({ name: 'AppCollapseBar' })
 
 const appStore = useAppStore()
 </script>
 
 <style lang="scss" scoped>
-.collapse-wrapper {
+.collapse-wrapper--bar {
   height: 100%;
   width: 5px;
   position: absolute;

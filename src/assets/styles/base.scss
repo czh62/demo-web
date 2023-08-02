@@ -28,7 +28,7 @@
   --vt-c-success: #3ac56c;
   --vt-c-warning: #ffab14;
 
-  --vt-c-height: 60px !important;
+  --vt-c-height: 56px !important;
   --vt-c-height-2: 30px !important;
 
   --vt-c-radius: 8px;
@@ -57,7 +57,8 @@
   --height-version: var(--vt-c-height-2);
 
   --width-aside: 220px;
-  --width-aside-collapsed: 69px;
+  --width-aside-collapsed: 64px;
+  --width-aside-collapsed-has-bar: 69px;
 
   --color-theme: var(--vt-c-primary);
 }

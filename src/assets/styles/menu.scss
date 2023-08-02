@@ -2,12 +2,20 @@
   height: 100%;
   width: calc(100% - 5px);
 }
+
+.el-scrollbar.has-header {
+  height: 100%;
+  width: 100%;
+}
+
 .el-scrollbar.has-logo.has-version {
   height: calc(100% - var(--height-logo) - var(--height-version)) !important;
 }
+
 .el-scrollbar.has-logo {
   height: calc(100% - var(--height-logo)) !important;
 }
+
 .el-scrollbar.has-version {
   height: calc(100% - var(--height-version)) !important;
 }
