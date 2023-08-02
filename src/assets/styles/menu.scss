@@ -23,6 +23,7 @@
 :deep(.app-menu) {
   border-right: 0;
   background-color: var(--color-background-soft);
+  width: 100%;
 
   .el-menu-item {
     color: var(--vt-c-text-light-2);
