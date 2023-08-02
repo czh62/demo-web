@@ -1,3 +1,4 @@
+import 'virtual:svg-icons-register'
 import './assets/styles/index.scss'
 
 import { createApp } from 'vue'
