@@ -11,6 +11,7 @@
       <el-container>
         <el-header v-if="showHeader">
           <CollapseBlock />
+          <Breadcrumb />
         </el-header>
         <el-main><router-view /></el-main>
         <el-footer v-if="showFooter">2023 ©️ BASE VUE PROJECT USE VITE.</el-footer>
@@ -28,6 +29,7 @@ import Logo from './components/Logo.vue'
 import Version from './components/Version.vue'
 import CollapseBar from './components/CollapseBar.vue'
 import CollapseBlock from './components/CollapseBlock.vue'
+import Breadcrumb from './components/Breadcrumb.vue'
 
 defineOptions({ name: 'AppLayoutWrapper' })
 

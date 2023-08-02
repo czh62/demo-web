@@ -5,7 +5,7 @@ NProgress.configure({
   // 动画方式
   easing: 'ease',
   // 递增进度条的速度
-  speed: 500,
+  speed: 200,
   // 是否显示加载ico
   showSpinner: false,
   // 自动递增间隔

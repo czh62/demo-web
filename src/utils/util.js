@@ -38,6 +38,21 @@ export const getShowMenuList = menuList => {
 }
 
 /**
+ * @description 递归找出所有面包屑存储到 pinia 中
+ * @param {Array} menuList 所有菜单列表
+ * @param {Object} result 输出的结果
+ * @param {Array} parent 父级菜单
+ * @returns object
+ */
+export const getAllBreadcrumbList = (menuList, result = {}, parent = []) => {
+  for (const item of menuList) {
+    result[item.path] = [...parent, item]
+    if (item.children?.length) getAllBreadcrumbList(item.children, result, result[item.path])
+  }
+  return result
+}
+
+/**
  * @description 生成随机数
  * @param {Number} min 最小值
  * @param {Number} max 最大值

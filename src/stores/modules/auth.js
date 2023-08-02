@@ -1,7 +1,7 @@
 import { reactive, toRefs } from 'vue'
 import { defineStore } from 'pinia'
 import DynamicRouter from '@/assets/json/dynamic-router.json'
-import { getFlatArr, getShowMenuList } from '@/utils/util'
+import { getFlatArr, getShowMenuList, getAllBreadcrumbList } from '@/utils/util'
 
 const useAuthStore = defineStore('auth', () => {
   const state = reactive({
@@ -17,6 +17,9 @@ const useAuthStore = defineStore('auth', () => {
   // 扁平后的菜单列表，用于添加动态路由
   const getFlatMenuList = () => getFlatArr(state.dynamicMenuList)
 
+  // 从菜单列表获取面包屑列表，用于渲染面包屑组件
+  const getBreadcrumblist = () => getAllBreadcrumbList(state.dynamicMenuList)
+
   // 这里引用的是本地json数据，开发中应该从后端获取
   const getDynamicMenuList = async () => {
     const { data } = DynamicRouter
@@ -28,7 +31,8 @@ const useAuthStore = defineStore('auth', () => {
     getTreeMenuList,
     getFilterMenuList,
     getFlatMenuList,
-    getDynamicMenuList
+    getDynamicMenuList,
+    getBreadcrumblist
   }
 })
 

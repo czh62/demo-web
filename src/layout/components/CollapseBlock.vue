@@ -1,6 +1,6 @@
 <template>
   <div class="collpase-wrapper--block" @click="appStore.collapsedChange">
-    <SvgIcon :icon="icon" size="24px" />
+    <SvgIcon :icon="icon" size="20px" />
   </div>
 </template>
 
@@ -19,6 +19,9 @@ const icon = computed(() => collapsed.value ? 'collapse-off' : 'collapse-on')
 
 <style lang="scss" scoped>
 .collpase-wrapper--block {
+  height: var(--height-header);
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 </style>
