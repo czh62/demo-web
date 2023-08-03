@@ -9,9 +9,12 @@
         <CollapseBar v-if="!showHeader" />
       </el-aside>
       <el-container>
-        <el-header v-if="showHeader">
-          <CollapseBlock />
-          <Breadcrumb />
+        <el-header v-if="showHeader" :class="{ 'has-tags-view': showTagsView }">
+          <div class="header-wrapper">
+            <CollapseBlock />
+            <Breadcrumb />
+          </div>
+          <TagsView />
         </el-header>
         <el-main><router-view /></el-main>
         <el-footer v-if="showFooter">2023 ©️ BASE VUE PROJECT USE VITE.</el-footer>
@@ -30,6 +33,7 @@ import Version from './components/Version.vue'
 import CollapseBar from './components/CollapseBar.vue'
 import CollapseBlock from './components/CollapseBlock.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
+import TagsView from './components/TagsView.vue'
 
 defineOptions({ name: 'AppLayoutWrapper' })
 
@@ -38,6 +42,7 @@ const showHeader = computed(() => layoutStore.showHeader)
 const showFooter = computed(() => layoutStore.showFooter)
 const showLogo = computed(() => layoutStore.showLogo)
 const showVersion = computed(() => layoutStore.showVersion)
+const showTagsView = computed(() => layoutStore.showTagsView)
 
 const appStore = useAppStore()
 const collapsed = computed(() => appStore.collapsed)

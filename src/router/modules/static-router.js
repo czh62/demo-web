@@ -1,9 +1,11 @@
+export const HOME_URL = '/home'
+
 export const staticRouter = [
   {
     path: '/',
     name: 'layout',
     component: () => import('@/layout/index.vue'),
-    redirect: '/home',
+    redirect: HOME_URL,
     children: []
   }
 ]
