@@ -4,6 +4,7 @@ import useAuthStore from './auth'
 import useKeepAliveStore from './keep-alive'
 import router from '@/router'
 import { HOME_URL } from '@/router/modules/static-router'
+import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useTagsViewStore = defineStore('tags-view', () => {
   const keepAliveStore = useKeepAliveStore()
@@ -98,6 +99,8 @@ const useTagsViewStore = defineStore('tags-view', () => {
     clearRight,
     refresh
   }
+}, {
+  persist: usePersistedstate('tags-view')
 })
 
 export default useTagsViewStore

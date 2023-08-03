@@ -1,5 +1,6 @@
 import { reactive, toRefs } from 'vue'
 import { defineStore } from 'pinia'
+import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useAppStore = defineStore('app', () => {
   const state = reactive({
@@ -14,6 +15,8 @@ const useAppStore = defineStore('app', () => {
     ...toRefs(state),
     collapsedChange
   }
+}, {
+  persist: usePersistedstate('app')
 })
 
 export default useAppStore

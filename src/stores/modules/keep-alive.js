@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
+import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useKeepAliveStore = defineStore('keep-alive', () => {
 
@@ -30,6 +31,8 @@ const useKeepAliveStore = defineStore('keep-alive', () => {
     remove,
     setKeepAliveName
   }
+}, {
+  persist: usePersistedstate('keep-alive')
 })
 
 export default useKeepAliveStore
