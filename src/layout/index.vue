@@ -16,7 +16,15 @@
           </div>
           <TagsView />
         </el-header>
-        <el-main><router-view /></el-main>
+        <el-main>
+          <router-view v-slot="{ Component, route }">
+            <transition appear name="fade-transform" mode="out-in">
+              <keep-alive :include="keepAliveStore.keepAliveName">
+                <component :is="Component" :key="route.path" />
+              </keep-alive>
+            </transition>
+          </router-view>
+        </el-main>
         <el-footer v-if="showFooter">2023 ©️ BASE VUE PROJECT USE VITE.</el-footer>
       </el-container>
     </el-container>
@@ -27,6 +35,7 @@
 import { computed, provide } from 'vue'
 import useLayoutStore from '@/stores/modules/layout'
 import useAppStore from '@/stores/modules/app'
+import useKeepAliveStore from '../stores/modules/keep-alive'
 import Menu from './components/Menu.vue'
 import Logo from './components/Logo.vue'
 import Version from './components/Version.vue'
@@ -37,6 +46,7 @@ import TagsView from './components/TagsView.vue'
 
 defineOptions({ name: 'AppLayoutWrapper' })
 
+const keepAliveStore = useKeepAliveStore()
 const layoutStore = useLayoutStore()
 const showHeader = computed(() => layoutStore.showHeader)
 const showFooter = computed(() => layoutStore.showFooter)
@@ -52,7 +62,6 @@ provide('showLogo', showLogo)
 provide('showHeader', showHeader)
 provide('showVersion', showVersion)
 provide('collapsed', collapsed)
-
 </script>
 
 <style lang="scss" scoped>

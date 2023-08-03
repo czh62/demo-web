@@ -1,16 +1,23 @@
 import { defineStore } from 'pinia'
 import { reactive, toRefs } from 'vue'
 import useAuthStore from './auth'
+import useKeepAliveStore from './keep-alive'
 import router from '@/router'
 import { HOME_URL } from '@/router/modules/static-router'
 
 const useTagsViewStore = defineStore('tags-view', () => {
+  const keepAliveStore = useKeepAliveStore()
+
   const state = reactive({
     tagsViewList: []
   })
 
   const insert = tag => {
-    if (state.tagsViewList.every(item => item.path !== tag.path)) state.tagsViewList.push(tag)
+    if (state.tagsViewList.every(item => item.path !== tag.path)) {
+      state.tagsViewList.push(tag)
+      // 此处将需要缓存的组件的name存入到pinia
+      tag.keepAlive && keepAliveStore.insert(tag.name)
+    }
   }
 
   // 关闭地址为path的页签
@@ -71,7 +78,8 @@ const useTagsViewStore = defineStore('tags-view', () => {
           title: item.meta.title,
           path: item.path,
           name: item.name,
-          close: !item.meta.isAffix
+          close: !item.meta.isAffix,
+          keepAlive: item.meta.isKeepAlive
         }
         insert(tabsParams)
       }

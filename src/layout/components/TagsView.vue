@@ -42,6 +42,7 @@ defineOptions({ name: 'AppTagsView' })
 const route = useRoute()
 const router = useRouter()
 const tagsViewStore = useTagsViewStore()
+
 const active = ref(route.fullPath)
 
 const tagsClick = item => {
@@ -86,7 +87,8 @@ watch(
       title: route.meta.title,
       path: route.fullPath,
       name: route.name,
-      close: !route.meta.isAffix
+      close: !route.meta.isAffix,
+      keepAlive: route.meta.isKeepAlive
     }
     tagsViewStore.insert(tabsParams)
   },

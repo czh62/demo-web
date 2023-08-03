@@ -30,6 +30,8 @@
 
     .el-main {
       padding: 10px 20px;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
 
     .el-footer {
