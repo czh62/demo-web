@@ -17,8 +17,8 @@ import useAuthStore from '@/stores/modules/auth'
  * @param meta.isLink ==> 是否外链(外链，点击后打开新页签)
  * @param meta.isHide ==> 是否隐藏(开启隐藏后将不会出现在菜单栏，但该页面仍可继续访问)
  * @param meta.isFull ==> 是否全屏(示例：数据大屏页面)
- * @param meta.isAffix ==> 是否固定在 tabs nav(未实现)
- * @param meta.isKeepAlive ==> 是否缓存(未实现)
+ * @param meta.isAffix ==> 当前页签是否固定（固定时无法关闭）
+ * @param meta.isKeepAlive ==> 当前组件是否缓存
  * */
 
 const router = createRouter({

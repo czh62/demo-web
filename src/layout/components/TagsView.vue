@@ -102,9 +102,27 @@ watch(
 .tags-view-wrapper {
   display: flex;
   justify-content: space-between;
+
   .tags-wrapper {
     display: flex;
     flex-wrap: nowrap;
+    border-left: 1px solid var(--color-border);
+
+    .tags-view--tag {
+      line-height: 27px;
+      padding: 0 10px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 0;
+      height: 27px;
+      border: 0;
+      background-color: var(--vt-c-empty);
+      border-right: 1px solid var(--color-border);
+
+      &.view-active {
+        color: var(--vt-c-primary);
+      }
+    }
   }
 
   .more-wrapper {
@@ -117,20 +135,6 @@ watch(
     .el-text {
       font-size: 12px;
     }
-  }
-}
-.tags-view--tag {
-  line-height: 27px;
-  padding: 0 10px;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 0;
-  height: 27px;
-  border: 0;
-  background-color: var(--color-background-soft);
-
-  &.view-active {
-    color: var(--vt-c-primary);
   }
 }
 </style>
