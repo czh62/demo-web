@@ -4,9 +4,10 @@ import { defineStore } from 'pinia'
 const useLayoutStore = defineStore('layout', () => {
   const state = reactive({
     showLogo: false,
-    showFooter: false,
+    showFooter: true,
     showHeader: true,
-    showVersion: false
+    showVersion: true,
+    showTagsView: true
   })
 
   return {

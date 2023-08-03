@@ -106,11 +106,11 @@ watch(
   .tags-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    border-left: 1px solid var(--color-border);
+    // border-left: 1px solid var(--color-border);
 
     .tags-view--tag {
       line-height: 27px;
-      padding: 0 10px;
+      padding: 0 15px;
       font-size: 12px;
       cursor: pointer;
       border-radius: 0;

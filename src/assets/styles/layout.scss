@@ -11,7 +11,7 @@
       height: auto;
 
       .header-wrapper {
-        padding: 0 20px;
+        padding: 0 15px;
         height: var(--height-header);
         display: flex;
         align-items: center;
@@ -29,7 +29,7 @@
     }
 
     .el-main {
-      padding: 10px 20px;
+      padding: 10px 16px;
       box-sizing: border-box;
       overflow-x: hidden;
     }
@@ -51,13 +51,17 @@
     background-color: var(--color-background-soft);
     position: relative;
     transition: width .27s;
-    box-shadow: 2px 0 10px rgba($color: #000000, $alpha: .1);
 
     &.aside-collapsed {
       width: var(--width-aside-collapsed);
     }
+
     &.aside-collapsed.show-collapse-bar {
       width: var(--width-aside-collapsed-has-bar);
+    }
+
+    &:not(.show-collapse-bar) {
+      box-shadow: 2px 0 10px rgba($color: #000000, $alpha: .15);
     }
   }
 }

@@ -10,7 +10,7 @@ import { ref, inject } from 'vue'
 
 defineOptions({ name: 'AppVersion' })
 
-const versionContent = ref('0.0.2')
+const versionContent = ref('1.0.0')
 const collapsed = inject('collapsed')
 </script>
 
