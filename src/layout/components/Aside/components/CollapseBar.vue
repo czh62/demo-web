@@ -20,14 +20,14 @@ const appStore = useAppStore()
   position: absolute;
   right: 0px;
   top: 0;
-  background-color: var(--color-background-mute);
+  background-color: var(--c-bg-mute);
   display: flex;
   align-items: center;
 
   .collapse--wrapper__btn {
     width: 100%;
     height: 50px;
-    background-color: var(--vt-c-primary);
+    background-color: var(--c-primary);
     line-height: 50px;
     color: #fff;
     overflow: hidden;

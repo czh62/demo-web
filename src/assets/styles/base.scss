@@ -1,67 +1,48 @@
-/* color palette from <https://github.com/vuejs/theme> */
+// color
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f6f6fb;
-  --vt-c-white-mute: #e9e9f6;
+  --c-white: #ffffff;
+  --c-empty: transparent;
+  --c-black: #000000;
 
-  --vt-c-empty: transparent;
+  --c-border: #e4e7ed;
 
-  --vt-c-black: #000000;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #303544;
+  --c-primary: #409EFF;
+  --c-success: #67C23A;
+  --c-warning: #E6A23C;
+  --c-danger: #F56C6C;
+  --c-info: #909399;
 
-  --vt-c-indigo: #303133;
+  --c-bg-aside: var(--c-white);
+  --c-bg-menu-active: #e9ecf7;
 
-  --vt-c-divider-light: #E4E7ED;
-  --vt-c-divider-lighter: #EBEEF5;
-  --vt-c-divider-dark: #D4D7DE;
-  --vt-c-divider-darker: #CDD0D6;
+  --c-text-main: #303133;
+  --c-text-secondary: #606266;
+  --c-text-regular: #909399;
+  --c-text-placeholder: #A8ABB2;
+  --c-disabled: #C0C4CC;
 
-  --vt-c-text-disabled: #C0C4CC;
-
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: #606266;
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: #ebebeb;
-
-  --vt-c-primary: #2937ff;
-  --vt-c-success: #3ac56c;
-  --vt-c-warning: #ffab14;
-
-  --vt-c-height: 56px !important;
-  --vt-c-height-2: 30px !important;
-
-  --vt-c-radius: 8px;
-  --vt-c-radius-2: 4px;
+  --c-bg-soft: #f6f6fb;
+  --c-bg-mute: #e9e9f6;
 }
 
-/* semantic color variables for this project */
+// size h -> height, w -> width
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  --h-header: 56px;
+  --h-logo: var(--h-header);
+  --h-footer: 30px;
+  --h-version: var(--h-footer);
 
-  --color-border: var(--vt-c-divider-lighter);
-  --color-border-hover: var(--vt-c-divider-light);
+  --w-aside: 220px;
+  --w-aside-collapsed: 64px;
+  --w-aside-collapsed-2: 69px;
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
-  --color-text-disabled: var(--vt-c-text-disabled);
+  --radius: 4px;
+  --radius-2: 8px;
+}
 
-  --section-gap: 160px;
-
-  --height-header: var(--vt-c-height);
-  --height-logo: var(--vt-c-height);
-  --height-tags-view: 28px;
-
-  --height-footer: var(--vt-c-height-2);
-  --height-version: var(--vt-c-height-2);
-
-  --width-aside: 220px;
-  --width-aside-collapsed: 64px;
-  --width-aside-collapsed-has-bar: 69px;
-
-  --color-theme: var(--vt-c-primary);
+// border
+:root {
+  --style-border: 1px solid var(--c-border);
 }
 
 @for $i from 0 through 30 {

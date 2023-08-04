@@ -12,18 +12,18 @@
 
       .header-wrapper {
         padding: 0 15px;
-        height: var(--height-header);
+        height: var(--h-header);
         display: flex;
         align-items: center;
         justify-content: flex-start;
         // 此属性具有兼容性问题，请注意浏览器版本是否支持该属性，必要时请使用margin代替
         gap: 20px;
-        border-bottom: 1px solid var(--color-border);
+        border-bottom: var(--style-border);
       }
 
       .tags-view-wrapper {
         // padding: 0 20px;
-        border-bottom: 1px solid var(--color-border);
+        border-bottom: var(--style-border);
         height: var(--height-tags-view);
       }
     }
@@ -35,10 +35,10 @@
     }
 
     .el-footer {
-      height: var(--height-footer);
-      line-height: var(--height-footer);
+      height: var(--h-footer);
+      line-height: var(--h-footer);
       font-size: 10px;
-      color: var(--vt-c-text-light-2);
+      color: var(--c-text-secondary);
       text-align: center;
       padding: 0 20px;
     }
@@ -47,17 +47,17 @@
 
 .app-wrapper.app-vertical {
   .el-aside {
-    width: var(--width-aside);
-    background-color: var(--color-background-soft);
+    width: var(--w-aside);
+    background-color: var(--c-bg-aside);
     position: relative;
     transition: width .28s;
 
     &.aside-collapsed {
-      width: var(--width-aside-collapsed);
+      width: var(--w-aside-collapsed);
     }
 
     &.aside-collapsed.show-collapse-bar {
-      width: var(--width-aside-collapsed-has-bar);
+      width: var(--w-aside-collapsed-2);
     }
 
     &:not(.show-collapse-bar) {

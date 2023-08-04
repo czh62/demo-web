@@ -106,7 +106,7 @@ watch(
   .tags-wrapper {
     display: flex;
     flex-wrap: nowrap;
-    // border-left: 1px solid var(--color-border);
+    // border-left: var(--style-border);
 
     .tags-view--tag {
       line-height: 27px;
@@ -116,11 +116,11 @@ watch(
       border-radius: 0;
       height: 27px;
       border: 0;
-      background-color: var(--vt-c-empty);
-      border-right: 1px solid var(--color-border);
+      background-color: var(--c-empty);
+      border-right: var(--style-border);
 
       &.view-active {
-        color: var(--vt-c-primary);
+        color: var(--c-primary);
       }
     }
   }
@@ -128,7 +128,7 @@ watch(
   .more-wrapper {
     height: 27px;
     padding: 0 10px;
-    background-color: var(--color-background-soft);
+    background-color: var(--c-bg-soft);
     display: flex;
     align-items: center;
 

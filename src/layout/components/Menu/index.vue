@@ -6,7 +6,6 @@
     <el-menu
       class="app-menu menu-vertical"
       :class="{ 'app-menu__collapsed': collapsed }"
-      active-text-color="#2937ff"
       unique-opened
       :default-active="activeMenu"
       :router="false"

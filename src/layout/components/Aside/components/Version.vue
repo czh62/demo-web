@@ -17,10 +17,10 @@ const collapsed = inject('collapsed')
 <style lang="scss" scoped>
 .version-wrapper {
   width: 100%;
-  height: var(--height-version);
-  line-height: var(--height-version);
+  height: var(--h-version);
+  line-height: var(--h-version);
   font-size: 10px;
-  color: var(--vt-c-text-light-2);
+  color: var(--c-text-secondary);
   text-align: center;
   position: absolute;
   left: 0;

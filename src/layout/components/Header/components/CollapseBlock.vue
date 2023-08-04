@@ -19,7 +19,7 @@ const icon = computed(() => collapsed.value ? 'collapse-off' : 'collapse-on')
 
 <style lang="scss" scoped>
 .collpase-wrapper--block {
-  height: var(--height-header);
+  height: var(--h-header);
   display: flex;
   align-items: center;
   cursor: pointer;

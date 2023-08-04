@@ -9,45 +9,45 @@
 }
 
 .el-scrollbar.has-logo.has-version {
-  height: calc(100% - var(--height-logo) - var(--height-version)) !important;
+  height: calc(100% - var(--h-logo) - var(--h-version)) !important;
 }
 
 .el-scrollbar.has-logo {
-  height: calc(100% - var(--height-logo)) !important;
+  height: calc(100% - var(--h-logo)) !important;
 }
 
 .el-scrollbar.has-version {
-  height: calc(100% - var(--height-version)) !important;
+  height: calc(100% - var(--h-version)) !important;
 }
 
 :deep(.app-menu) {
   border-right: 0;
-  background-color: var(--color-background-soft);
+  background-color: var(--c-empty);
   width: 100%;
 
   .el-menu-item {
-    color: var(--vt-c-text-light-2);
+    color: var(--c-text-secondary);
 
     &:hover {
-      background-color: var(--vt-c-empty);
+      background-color: var(--c-empty);
     }
   }
 
   .el-menu-item.is-active {
-    background-color: var(--color-background-mute);
-    color: var(--color-theme);
+    background-color: var(--c-empty);
+    color: var(--c-primary);
   }
 
   .el-sub-menu {
     .el-sub-menu__title {
-      color: var(--vt-c-text-light-2);
+      color: var(--c-text-secondary);
       
       &:hover {
-        background-color: var(--vt-c-empty);
+        background-color: var(--c-empty);
       }
     }
     .el-menu {
-      background-color: var(--color-background-soft);
+      background-color: var(--c-empty);
 
       .el-menu-item, .el-sub-menu__title {
         text-indent: 9px;
@@ -66,7 +66,10 @@
     padding: 0;
 
     .el-sub-menu.is-active {
-      background-color: var(--color-background-mute);
+      // background-color: var(--c-bg-mute);
+      .el-icon {
+        color: var(--c-primary);
+      }
     }
   }
 }

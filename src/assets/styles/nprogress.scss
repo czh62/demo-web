@@ -1,15 +1,15 @@
 /* nprogress样式 */
 #nprogress .bar {
-  background: var(--vt-c-primary) !important;
+  background: var(--c-primary) !important;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: var(--vt-c-primary) !important;
-  border-left-color: var(--vt-c-primary) !important;
+  border-top-color: var(--c-primary) !important;
+  border-left-color: var(--c-primary) !important;
 }
 
 #nprogress .peg {
   box-shadow:
-    0 0 10px var(--vt-c-primary),
-    0 0 5px var(--vt-c-primary) !important;
+    0 0 10px var(--c-primary),
+    0 0 5px var(--c-primary) !important;
 }

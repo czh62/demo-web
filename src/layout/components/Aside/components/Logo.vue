@@ -16,7 +16,7 @@ const collapsed = inject('collapsed')
 <style lang="scss" scoped>
 .logo-wrapper {
   width: 100%;
-  height: var(--height-logo);
+  height: var(--h-logo);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +29,7 @@ const collapsed = inject('collapsed')
 
   span {
     font-size: 18px;
-    color: var(--color-text);
+    color: var(--c-text-main);
   }
 }
 </style>
