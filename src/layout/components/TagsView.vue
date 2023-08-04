@@ -17,7 +17,7 @@
     </el-scrollbar>
     <div class="more-wrapper">
       <el-dropdown @command="handleCommand">
-        <el-icon class="pointer"><ArrowDown /></el-icon>
+        <div><el-icon class="pointer"><ArrowDown /></el-icon></div>
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item command="current" icon="Remove">关闭当前</el-dropdown-item>
