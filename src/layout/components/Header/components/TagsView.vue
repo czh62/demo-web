@@ -10,14 +10,15 @@
             :closable="tag.close"
             @click="tagsClick(tag)"
             @close="tagsClose(tag.path)"
-            >{{ tag.title }}</el-tag
+            >{{ $t(tag.title) }}</el-tag
           >
         </template>
       </div>
     </el-scrollbar>
     <div class="more-wrapper">
       <el-dropdown @command="handleCommand">
-        <div><el-icon class="pointer"><ArrowDown /></el-icon></div>
+        <!-- <div><el-icon class="pointer"><ArrowDown /></el-icon></div> -->
+        <el-text>{{ $t('common.more') }}</el-text>
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item command="current" icon="Remove">关闭当前</el-dropdown-item>

@@ -1,3 +1,10 @@
+@mixin truncated {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .el-scrollbar {
   height: 100%;
   width: calc(100% - 5px);
@@ -27,6 +34,10 @@
 
   .el-menu-item {
     color: var(--c-text-secondary);
+    
+    .is-truncated {
+      @include truncated;
+    }
 
     &:hover {
       background-color: var(--c-empty);
@@ -39,9 +50,13 @@
   }
 
   .el-sub-menu {
+    
     .el-sub-menu__title {
       color: var(--c-text-secondary);
-      
+      .is-truncated {
+        @include truncated;
+      }
+
       &:hover {
         background-color: var(--c-empty);
       }
@@ -53,10 +68,7 @@
         text-indent: 9px;
 
         .is-truncated {
-          display: inline-block;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+          @include truncated;
         }
       }
     }

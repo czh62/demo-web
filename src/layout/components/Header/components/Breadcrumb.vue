@@ -4,10 +4,10 @@
       <TransitionGroup name="breadcrumb" mode="out-in" tag="el-breadcrumb-item">
         <template v-if="breadcrumbList">
           <el-breadcrumb-item to="/" v-if="breadcrumbList[0].meta.title !== '系统首页'">
-            <el-text tag="b">系统首页</el-text>
+            <el-text tag="b">{{ $t('router.home_page') }}</el-text>
 					</el-breadcrumb-item>
           <el-breadcrumb-item v-for="(item, index) in breadcrumbList" :key="item.path">
-						<el-text>{{ item.meta.title }}</el-text>
+						<el-text>{{ $t(item.meta.title) }}</el-text>
 					</el-breadcrumb-item>
         </template>
       </TransitionGroup>

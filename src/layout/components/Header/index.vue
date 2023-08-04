@@ -40,7 +40,6 @@ const showTagsView = inject('showTagsView')
 
 .el-divider {
   margin: 0 15px;
-  border-color: var(--c-border);
 }
 
 </style>
