@@ -82,3 +82,10 @@ body,
 .absolute {
   position: absolute;
 }
+
+.widget-wrapper {
+  height: var(--h-header);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

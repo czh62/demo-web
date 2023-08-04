@@ -1,6 +1,6 @@
 <template>
   <div class="collpase-wrapper--block" @click="appStore.collapsedChange">
-    <SvgIcon :icon="icon" size="20px" />
+    <SvgIcon color="var(--c-text-secondary)" :icon="icon" size="20px" />
   </div>
 </template>
 
