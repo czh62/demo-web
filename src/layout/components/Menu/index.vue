@@ -1,7 +1,18 @@
 <template>
-  <el-scrollbar :class="{ 'has-logo': showLogo, 'has-version': showVersion, 'has-header': showHeader }">
+  <el-scrollbar
+    :class="{ 'has-logo': showLogo, 'has-version': showVersion, 'has-header': showHeader }"
+  >
     <!-- unique-opened -->
-    <el-menu class="app-menu menu-vertical" :class="{'app-menu__collapsed' : collapsed}" :default-active="activeMenu" :router="false" :collapse="collapsed" :collapse-transition="false">
+    <el-menu
+      class="app-menu menu-vertical"
+      :class="{ 'app-menu__collapsed': collapsed }"
+      active-text-color="#2937ff"
+      unique-opened
+      :default-active="activeMenu"
+      :router="false"
+      :collapse="collapsed"
+      :collapse-transition="false"
+    >
       <sidebar-item :menus="menus" />
     </el-menu>
   </el-scrollbar>
@@ -13,7 +24,7 @@ import { useRoute } from 'vue-router'
 import SidebarItem from './SidebarItem.vue'
 import useAuthStore from '@/stores/modules/auth'
 
-defineOptions({ name: 'AppMenu' })
+defineOptions({ name: 'AppLayoutMenu' })
 
 const route = useRoute()
 const authStore = useAuthStore()

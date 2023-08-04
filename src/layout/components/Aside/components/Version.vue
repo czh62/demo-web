@@ -22,5 +22,8 @@ const collapsed = inject('collapsed')
   font-size: 10px;
   color: var(--vt-c-text-light-2);
   text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 </style>

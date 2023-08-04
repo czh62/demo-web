@@ -6,7 +6,7 @@
   .el-container {
     height: 100%;
 
-    .el-header {
+    :deep(.el-header) {
       padding: 0;
       height: auto;
 
@@ -29,7 +29,7 @@
     }
 
     .el-main {
-      padding: 10px 16px;
+      padding: 10px 15px;
       box-sizing: border-box;
       overflow-x: hidden;
     }
@@ -50,7 +50,7 @@
     width: var(--width-aside);
     background-color: var(--color-background-soft);
     position: relative;
-    transition: width .27s;
+    transition: width .28s;
 
     &.aside-collapsed {
       width: var(--width-aside-collapsed);
