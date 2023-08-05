@@ -17,8 +17,9 @@
     </el-scrollbar>
     <div class="more-wrapper">
       <el-dropdown @command="handleCommand">
-        <!-- <div><el-icon class="pointer"><ArrowDown /></el-icon></div> -->
-        <el-text>{{ $t('common.more') }}</el-text>
+        <span class="el-dropdown-link pointer">       
+          <el-text>{{ $t('common.more') }}</el-text>
+        </span>
         <template #dropdown>
           <el-dropdown-menu>
             <el-dropdown-item command="current" icon="Remove">关闭当前</el-dropdown-item>
@@ -133,6 +134,10 @@ watch(
     display: flex;
     align-items: center;
 
+    .el-dropdown-link:focus {
+      outline: none;
+    }
+    
     .el-text {
       font-size: 12px;
     }

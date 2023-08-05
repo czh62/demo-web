@@ -1,7 +1,9 @@
 <template>
   <div class="widget-wrapper">
     <el-dropdown @command="handTranslate">
-      <SvgIcon color="var(--c-text-secondary)" icon="translate" size="24px" />
+      <span class="el-dropdown-link">
+        <SvgIcon color="var(--c-text-secondary)" icon="translate" size="24px" />
+      </span>
       <template #dropdown>
         <el-dropdown-menu>
           <el-dropdown-item command="zh-CN" :disabled="language === 'zh-CN'">{{ $t('language.zh_cn') }}</el-dropdown-item>

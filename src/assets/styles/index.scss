@@ -88,4 +88,8 @@ body,
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  .el-dropdown-link:focus {
+    outline: none;
+  }
 }
