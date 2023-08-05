@@ -22,11 +22,11 @@
         </span>
         <template #dropdown>
           <el-dropdown-menu>
-            <el-dropdown-item command="current" icon="Remove">关闭当前</el-dropdown-item>
-            <el-dropdown-item command="left" icon="DArrowLeft">关闭左侧</el-dropdown-item>
-            <el-dropdown-item command="right" icon="DArrowRight">关闭右侧</el-dropdown-item>
-            <el-dropdown-item command="other" divided icon="CircleClose">关闭其他</el-dropdown-item>
-            <el-dropdown-item command="clear" icon="SwitchButton">关闭所有</el-dropdown-item>
+            <el-dropdown-item command="current" icon="Remove">{{ $t('tags_view.close_current')}}</el-dropdown-item>
+            <el-dropdown-item command="left" icon="DArrowLeft">{{ $t('tags_view.close_left')}}</el-dropdown-item>
+            <el-dropdown-item command="right" icon="DArrowRight">{{ $t('tags_view.close_right')}}</el-dropdown-item>
+            <el-dropdown-item command="other" divided icon="CircleClose">{{ $t('tags_view.close_other')}}</el-dropdown-item>
+            <el-dropdown-item command="clear" icon="SwitchButton">{{ $t('tags_view.close_all')}}</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
