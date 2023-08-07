@@ -5,7 +5,7 @@ export default {
   },
   // 菜单配置
   router: {
-    home_page: 'Home Page'
+    home_page: 'Home'
   },
   // 语言类型配置
   language: {
