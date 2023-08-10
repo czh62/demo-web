@@ -20,7 +20,6 @@ const clean = () => {
     {
       confirmButtonText: t('common.confirm'),
       cancelButtonText: t('common.cancel'),
-      type: 'warning',
       buttonSize: 'default'
     }
   )

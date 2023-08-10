@@ -5,7 +5,12 @@ export default {
     tips: '提示',
     confirm: '确定',
     cancel: '取消',
-    warn: '警告'
+    warn: '警告',
+    close: '关闭',
+    insert: '新增',
+    edit: '编辑',
+    detail: '详情',
+    delete: '删除'
   },
   // 菜单配置
   router: {

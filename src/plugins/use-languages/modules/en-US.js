@@ -3,9 +3,14 @@ export default {
   common: {
     more: 'More',
     tips: 'Tips',
-    confirm: 'OK',
+    confirm: 'Confirm',
     cancel: 'Cancel',
-    warn: 'Warning'
+    warn: 'Warning',
+    close: 'Close',
+    insert: 'Insert',
+    edit: 'Edit',
+    detail: 'Detail',
+    delete: 'Delete'
   },
   // 菜单配置
   router: {
