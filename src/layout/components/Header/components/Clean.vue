@@ -7,17 +7,21 @@
 <script setup>
 import { ElMessageBox } from 'element-plus'
 import SvgIcon from '@/components/SvgIcon/index.vue'
+import { useI18n } from 'vue-i18n'
 
 defineOptions({ name: 'AppClean' })
 
+const { t } = useI18n()
+
 const clean = () => {
   ElMessageBox.confirm(
-    '清除缓存将会重置系统配置并刷新页面，请提前做好数据备份。是否继续？',
-    '提示',
+    t('message_box.clean'),
+    t('common.tips'),
     {
-      confirmButtonText: '确定',
-      cancelButtonText: '取消',
+      confirmButtonText: t('common.confirm'),
+      cancelButtonText: t('common.cancel'),
       type: 'warning',
+      buttonSize: 'default'
     }
   )
   .then(() => {
@@ -28,5 +32,4 @@ const clean = () => {
   })
   .catch(() => {})
 }
-
 </script>

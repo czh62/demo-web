@@ -1,6 +1,6 @@
 <template>
   <div class="widget-wrapper">
-    <el-dropdown @command="handTranslate">
+    <el-dropdown @command="handTranslate" size="default">
       <span class="el-dropdown-link">
         <SvgIcon color="var(--c-text-secondary)" icon="translate" size="24px" />
       </span>

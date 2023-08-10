@@ -5,7 +5,8 @@ import usePersistedstate from '@/plugins/use-persistedstate'
 const useAppStore = defineStore('app', () => {
   const state = reactive({
     collapsed: false,
-    language: 'zh-CN'
+    language: 'zh-CN',
+    size: 'default'
   })
 
   const collapsedChange = () => {
@@ -16,10 +17,15 @@ const useAppStore = defineStore('app', () => {
     state.language = language
   }
 
+  const sizeChange = size => {
+    state.size = size
+  }
+
   return {
     ...toRefs(state),
     collapsedChange,
-    translate
+    translate,
+    sizeChange
   }
 }, {
   persist: usePersistedstate('app')

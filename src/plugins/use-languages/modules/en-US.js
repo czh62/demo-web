@@ -2,6 +2,10 @@ export default {
   // 公共配置
   common: {
     more: 'More',
+    tips: 'Tips',
+    confirm: 'OK',
+    cancel: 'Cancel',
+    warn: 'Warning'
   },
   // 菜单配置
   router: {
@@ -19,5 +23,16 @@ export default {
     close_right: 'Close Right',
     close_other: 'Close Other',
     close_all: 'Close All'
+  },
+  // element-size
+  element_size: {
+    large: 'Large',
+    default: 'Default',
+    small: 'Small'
+  },
+  // message-box消息提示
+  message_box: {
+    clean: 'Cleaning the cache will reset the system configuration and refresh the page. Please backup the data in advance. Continue?',
+    size: 'Adjusting the component size will take effect after the page is refreshed. Please backup the data in advance. Continue?'
   }
 }

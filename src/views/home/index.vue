@@ -1,5 +1,7 @@
 <template>
-  <div class="page-wrapper">Home</div>
+  <div class="page-wrapper">
+    
+  </div>
 </template>
 
 <script setup>
