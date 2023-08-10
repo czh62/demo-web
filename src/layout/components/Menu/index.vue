@@ -1,6 +1,6 @@
 <template>
   <el-scrollbar
-    :class="{ 'has-logo': showLogo, 'has-version': showVersion, 'has-header': showHeader }"
+    :class="{ 'has-logo': showLogo, 'has-header': showHeader }"
   >
     <!-- unique-opened -->
     <el-menu
@@ -31,7 +31,6 @@ const menus = computed(() => authStore.getFilterMenuList())
 const activeMenu = computed(() => (route.meta.activeMenu ? route.meta.activeMenu : route.path))
 
 const showLogo = inject('showLogo')
-const showVersion = inject('showVersion')
 const showHeader = inject('showHeader')
 const collapsed = inject('collapsed')
 </script>

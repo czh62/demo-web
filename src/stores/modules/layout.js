@@ -6,7 +6,6 @@ const useLayoutStore = defineStore('layout', () => {
     showLogo: false,
     showFooter: false,
     showHeader: true,
-    showVersion: false,
     showTagsView: true
   })
 

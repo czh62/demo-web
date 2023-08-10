@@ -7,7 +7,7 @@
 
 .el-scrollbar {
   height: 100%;
-  width: calc(100% - 5px);
+  width: 100%;
 }
 
 .el-scrollbar.has-header {
@@ -15,16 +15,8 @@
   width: 100%;
 }
 
-.el-scrollbar.has-logo.has-version {
-  height: calc(100% - var(--h-logo) - var(--h-version)) !important;
-}
-
 .el-scrollbar.has-logo {
   height: calc(100% - var(--h-logo)) !important;
-}
-
-.el-scrollbar.has-version {
-  height: calc(100% - var(--h-version)) !important;
 }
 
 :deep(.app-menu) {

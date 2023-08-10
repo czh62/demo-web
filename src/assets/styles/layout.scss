@@ -50,18 +50,10 @@
     background-color: var(--c-bg-aside);
     position: relative;
     transition: width .28s;
+    border-right: var(--style-border);
 
     &.aside-collapsed {
       width: var(--w-aside-collapsed);
-    }
-
-    &.aside-collapsed.show-collapse-bar {
-      width: var(--w-aside-collapsed-2);
-    }
-
-    &:not(.show-collapse-bar) {
-      // box-shadow: 2px 0 10px rgba($color: #000000, $alpha: .15);
-      border-right: var(--style-border);
     }
   }
 }
