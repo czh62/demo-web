@@ -26,6 +26,7 @@ const clean = () => {
   .then(() => {
     localStorage.removeItem('keep-alive')
     localStorage.removeItem('tags-view')
+    localStorage.removeItem('layout')
     localStorage.removeItem('app')
     location.reload()
   })

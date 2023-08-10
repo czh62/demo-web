@@ -39,5 +39,15 @@ export default {
   message_box: {
     clean: '清除缓存将会重置系统配置并刷新页面，请提前做好数据备份。是否继续？',
     size: '调整组件尺寸将在页面刷新后生效，请提前做好数据备份。是否继续？'
+  },
+  // 抽屉
+  drawer: {
+    skin: '布局设置'
+  },
+  // layout setting
+  layout_setting: {
+    show_logo: '是否显示logo控件',
+    show_footer: '是否显示页脚控件',
+    show_tags_view: '是否显示页签控件'
   }
 }

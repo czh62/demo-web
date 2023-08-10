@@ -39,5 +39,15 @@ export default {
   message_box: {
     clean: 'Cleaning the cache will reset the system configuration and refresh the page. Please backup the data in advance. Continue?',
     size: 'Adjusting the component size will take effect after the page is refreshed. Please backup the data in advance. Continue?'
+  },
+  // 抽屉
+  drawer: {
+    skin: 'Layout Setting'
+  },
+  // layout setting
+  layout_setting: {
+    show_logo: 'Show logo control',
+    show_footer: 'Show footer control',
+    show_tags_view: 'Show tab control'
   }
 }

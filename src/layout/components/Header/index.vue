@@ -9,6 +9,7 @@
       <el-divider direction="vertical"></el-divider>
       <Translate class="mr15" />
       <ElementSize class="mr15" />
+      <Skin class="mr15" />
       <Fullscreen />
       <el-divider direction="vertical"></el-divider>
       <Clean class="mr15" />
@@ -25,6 +26,7 @@ import Breadcrumb from './components/Breadcrumb.vue'
 import TagsView from './components/TagsView.vue'
 import Fullscreen from './components/Fullscreen.vue'
 import Translate from './components/Translate.vue'
+import Skin from './components/Skin.vue'
 import ElementSize from './components/ElementSize.vue'
 import Logout from './components/Logout.vue'
 import Clean from './components/Clean.vue'

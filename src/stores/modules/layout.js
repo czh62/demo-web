@@ -1,5 +1,6 @@
 import { reactive, toRefs } from 'vue'
 import { defineStore } from 'pinia'
+import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useLayoutStore = defineStore('layout', () => {
   const state = reactive({
@@ -12,6 +13,8 @@ const useLayoutStore = defineStore('layout', () => {
   return {
     ...toRefs(state)
   }
+}, {
+  persist: usePersistedstate('layout')
 })
 
 export default useLayoutStore
