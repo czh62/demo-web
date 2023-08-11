@@ -1,5 +1,6 @@
 import router from '..'
 import useAuthStore from '@/stores/modules/auth'
+import { notFoundRouter } from './static-router'
 
 // 引入 views 文件夹下所有 vue 文件
 const modules = import.meta.glob('@/views/**/*.vue')
@@ -22,6 +23,8 @@ const initDynamicRouter = async () => {
       router.addRoute("layout", item);
     }
   })
+
+  router.addRoute(notFoundRouter)
 }
 
 export default initDynamicRouter

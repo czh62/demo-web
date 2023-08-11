@@ -7,6 +7,12 @@ export const staticRouter = [
     component: () => import('@/layout/index.vue'),
     redirect: HOME_URL,
     children: []
+  },
+  {
+    path: '/login',
+    name: 'PageLogin',
+    component: () => import('@/views/login/index.vue'),
+    meta: { title: '登录' }
   }
 ]
 
@@ -18,7 +24,15 @@ export const errorRouter = [
     meta: { title: 'Page403' }
   },
   {
-    path: '/:pathMatch(.*)*',
+    path: '/404',
+    name: '404',
     component: () => import('@/views/error/404/index.vue'),
+    meta: { title: 'Page404' }
   }
 ]
+
+export const notFoundRouter = {
+  path: '/:pathMatch(.*)*',
+  name: 'NotFound',
+  redirect: { path: '/404' }
+}

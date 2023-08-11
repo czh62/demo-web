@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-defineOptions({ name: 'PageHome '})
+defineOptions({ name: 'PageHome' })
 </script>
 
 <style lang="scss" scoped></style>
