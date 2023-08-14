@@ -10,7 +10,8 @@ export default {
     insert: 'Insert',
     edit: 'Edit',
     detail: 'Detail',
-    delete: 'Delete'
+    delete: 'Delete',
+    reset: 'Reset'
   },
   // 菜单配置
   router: {
@@ -38,7 +39,23 @@ export default {
   // message-box消息提示
   message_box: {
     clean: 'Cleaning the cache will reset the system configuration and refresh the page. Please backup the data in advance. Continue?',
-    size: 'Adjusting the component size will take effect after the page is refreshed. Please backup the data in advance. Continue?'
+    size: 'Adjusting the component size will take effect after the page is refreshed. Please backup the data in advance. Continue?',
+    logout: 'The cache and system configuration will be cleared and reset before signing out. Continue?'
+  },
+  // login
+  login: {
+    title_sign_in: 'SIGN IN',
+    title_sign_up: 'SIGN UP',
+    username: 'Username',
+    username_placeholder: 'Please input your username',
+    username_validate_info: 'Please input valid username',
+    password: 'Password',
+    password_placeholder: 'Please input your password',
+    password_validate_info: 'Please input valid password',
+    remember: 'Remember',
+    forget: 'Forget',
+    sign_in: 'Sign in',
+    sign_up: 'Sign up'
   },
   // 抽屉
   drawer: {

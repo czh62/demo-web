@@ -13,6 +13,8 @@
     "@element-plus/icons-vue": "^2.1.0",
     "@vueuse/core": "^10.3.0",
     "element-plus": "^2.3.9",
+    "js-cookie": "^3.0.5",
+    "jsencrypt": "^3.3.2",
     "mitt": "^3.0.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.4",

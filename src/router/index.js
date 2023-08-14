@@ -3,6 +3,7 @@ import { errorRouter, staticRouter } from './modules/static-router'
 import initDynamicRouter from './modules/dynamic-router'
 import NProgress from '@/plugins/use-nprogress'
 import useAuthStore from '@/stores/modules/auth'
+import { getToken } from '@/utils/cookie'
 
 /**
  * @description 动态路由参数配置简介
@@ -26,15 +27,32 @@ const router = createRouter({
   routes: [...staticRouter, ...errorRouter]
 })
 
+const white = ['/login']
+
 // 通过路由守卫开启/关闭页面进度条
 router.beforeEach(async (to, from, next) => {
   NProgress.start()
   const authStore = useAuthStore()
-  if (authStore.dynamicMenuList.length === 0) {
-    await initDynamicRouter()
-    next({ ...to, replace: true })
+
+  if (getToken()) {
+    if (to.path === '/login') {
+      next({ path: '/' })
+      NProgress.done()
+    } else {
+      if (authStore.dynamicMenuList.length === 0) {
+        await initDynamicRouter()
+        next({ ...to, replace: true })
+      } else {
+        next()
+      }
+    }
   } else {
-    next()
+    if (white.includes(to.path)) {
+      next()
+    } else {
+      next(`/login?redirect=${to.fullPath}`)
+      NProgress.done()
+    }
   }
 })
 

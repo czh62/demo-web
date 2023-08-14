@@ -6,8 +6,8 @@
 
 <script setup>
 import { ElMessageBox } from 'element-plus'
-import SvgIcon from '@/components/SvgIcon/index.vue'
 import { useI18n } from 'vue-i18n'
+import SvgIcon from '@/components/SvgIcon/index.vue'
 
 defineOptions({ name: 'AppClean' })
 

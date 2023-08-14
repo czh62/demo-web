@@ -10,7 +10,8 @@ export default {
     insert: '新增',
     edit: '编辑',
     detail: '详情',
-    delete: '删除'
+    delete: '删除',
+    reset: '重置'
   },
   // 菜单配置
   router: {
@@ -38,7 +39,23 @@ export default {
   // message-box消息提示
   message_box: {
     clean: '清除缓存将会重置系统配置并刷新页面，请提前做好数据备份。是否继续？',
-    size: '调整组件尺寸将在页面刷新后生效，请提前做好数据备份。是否继续？'
+    size: '调整组件尺寸将在页面刷新后生效，请提前做好数据备份。是否继续？',
+    logout: '在登出前将会清除并重置缓存和系统配置。是否继续？'
+  },
+  // login
+  login: {
+    title_sign_in: '登录',
+    title_sign_up: '注册',
+    username: '用户名',
+    username_placeholder: '请输入您的用户名',
+    username_validate_info: '请输入有效的用户名',
+    password: '密码',
+    password_placeholder: '请输入您的密码',
+    password_validate_info: '请输入有效的密码',
+    remember: '记住密码',
+    forget: '忘记密码',
+    sign_in: '登录',
+    sign_up: '注册账号'
   },
   // 抽屉
   drawer: {
