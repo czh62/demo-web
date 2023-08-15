@@ -7,6 +7,7 @@
     <div class="tool-wrapper__right">
       <Welcome />
       <el-divider direction="vertical"></el-divider>
+      <ThemeMode class="mr15" />
       <Translate class="mr15" />
       <ElementSize class="mr15" />
       <Skin class="mr15" />
@@ -25,6 +26,7 @@ import CollapseBlock from './components/CollapseBlock.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import TagsView from './components/TagsView.vue'
 import Fullscreen from './components/Fullscreen.vue'
+import ThemeMode from './components/ThemeMode.vue'
 import Translate from './components/Translate.vue'
 import Skin from './components/Skin.vue'
 import ElementSize from './components/ElementSize.vue'

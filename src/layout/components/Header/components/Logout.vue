@@ -1,6 +1,6 @@
 <template>
   <div class="widget-wrapper" @click="logout">
-    <SvgIcon color="var(--c-text-secondary)" icon="logout" size="24px" />
+    <SvgIcon color="var(--el-text-color-regular)" icon="logout" size="24px" />
   </div>
 </template>
 

@@ -25,7 +25,7 @@
   width: 100%;
 
   .el-menu-item {
-    color: var(--c-text-secondary);
+    color: var(--el-text-color-regular);
     
     .is-truncated {
       @include truncated;
@@ -38,13 +38,13 @@
 
   .el-menu-item.is-active {
     background-color: var(--c-empty);
-    color: var(--c-primary);
+    color: var(--el-color-primary);
   }
 
   .el-sub-menu {
     
     .el-sub-menu__title {
-      color: var(--c-text-secondary);
+      color: var(--el-text-color-regular);
       .is-truncated {
         @include truncated;
       }
@@ -72,7 +72,7 @@
     .el-sub-menu.is-active {
       // background-color: var(--c-bg-mute);
       .el-icon {
-        color: var(--c-primary);
+        color: var(--el-color-primary);
       }
     }
   }

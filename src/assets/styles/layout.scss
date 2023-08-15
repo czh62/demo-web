@@ -37,7 +37,7 @@
       height: var(--h-footer);
       line-height: var(--h-footer);
       font-size: 10px;
-      color: var(--c-text-secondary);
+      color: var(--el-text-color-secondary);
       text-align: center;
       padding: 0 20px;
     }
@@ -47,7 +47,6 @@
 .app-wrapper.app-vertical {
   .el-aside {
     width: var(--w-aside);
-    background-color: var(--c-bg-aside);
     position: relative;
     transition: width .28s;
     border-right: var(--style-border);

@@ -2,7 +2,7 @@
   <div class="widget-wrapper">
     <el-dropdown @command="handleSizeChange" size="default">
       <span class="el-dropdown-link">
-        <SvgIcon color="var(--c-text-secondary)" icon="element-size" size="24px" />
+        <SvgIcon color="var(--el-text-color-regular)" icon="element-size" size="24px" />
       </span>
       <template #dropdown>
         <el-dropdown-menu>

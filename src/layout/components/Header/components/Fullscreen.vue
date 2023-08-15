@@ -1,6 +1,6 @@
 <template>
   <div class="widget-wrapper" @click="toggle">
-    <SvgIcon color="var(--c-text-secondary)" :icon="icon" size="24px" />
+    <SvgIcon color="var(--el-text-color-regular)" :icon="icon" size="24px" />
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import SvgIcon from '@/components/SvgIcon/index.vue'
 
 defineOptions({ name: 'AppFullscreenSwitch' })
 
-const { isFullscreen, enter, exit, toggle } = useFullscreen()
+const { isFullscreen, toggle } = useFullscreen()
 
 const icon = computed(() => isFullscreen.value ? 'fullscreen-exit' : 'fullscreen')
 </script>

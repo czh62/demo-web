@@ -1,6 +1,6 @@
 <template>
   <div class="widget-wrapper" @click="clean">
-    <SvgIcon color="var(--c-text-secondary)" icon="clean" size="24px" />
+    <SvgIcon color="var(--el-text-color-regular)" icon="clean" size="24px" />
   </div>
 </template>
 

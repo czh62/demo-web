@@ -1,7 +1,7 @@
-@import './base.scss';
-@import './nprogress.scss';
-@import './transition.scss';
-@import './reset.scss';
+@use './base.scss' as *;
+@use './nprogress.scss' as *;
+@use './transition.scss' as *;
+@use './reset.scss' as *;
 
 *,
 *::before,
@@ -13,8 +13,7 @@
 
 body {
   min-height: 100vh;
-  color: #303133;
-  background: #ffffff;
+  color: var(--el-text-color);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,

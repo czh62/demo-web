@@ -41,7 +41,7 @@
 
 // border
 :root {
-  --style-border: 1px solid var(--c-border);
+  --style-border: 1px solid var(--el-border-color);
 }
 
 @for $i from 0 through 30 {

@@ -1,6 +1,6 @@
 <template>
   <div class="widget-wrapper" @click="visible = true">
-    <SvgIcon color="var(--c-text-secondary)" icon="skin" size="24px" />
+    <SvgIcon color="var(--el-text-color-regular)" icon="skin" size="24px" />
     <ThemeDrawer v-model="visible" />
   </div>
 

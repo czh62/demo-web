@@ -122,7 +122,7 @@ watch(
       border-right: var(--style-border);
 
       &.view-active {
-        color: var(--c-primary);
+        color: var(--el-color-primary);
       }
     }
   }
@@ -130,7 +130,7 @@ watch(
   .more-wrapper {
     height: 27px;
     padding: 0 10px;
-    background-color: var(--c-bg-soft);
+    border-left: var(--style-border);
     display: flex;
     align-items: center;
 
