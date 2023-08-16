@@ -1,5 +1,5 @@
 <template>
-  <div class="collpase-wrapper--block" @click="appStore.collapsedChange">
+  <div class="widget-wrapper" @click="appStore.collapsedChange">
     <SvgIcon color="var(--el-text-color-regular)" :icon="icon" size="24px" />
   </div>
 </template>
@@ -9,19 +9,10 @@ import { computed, inject } from 'vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import useAppStore from '@/stores/modules/app'
 
-defineOptions({ name: 'AppCollapseBlock' })
+defineOptions({ name: 'AppCollapse' })
 
 const collapsed = inject('collapsed')
 
 const appStore = useAppStore()
 const icon = computed(() => collapsed.value ? 'collapse-off' : 'collapse-on')
 </script>
-
-<style lang="scss" scoped>
-.collpase-wrapper--block {
-  height: var(--h-header);
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-</style>

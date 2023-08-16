@@ -21,7 +21,7 @@
 
 :deep(.app-menu) {
   border-right: 0;
-  background-color: var(--c-empty);
+  background-color: transparent;
   width: 100%;
 
   .el-menu-item {
@@ -32,12 +32,12 @@
     }
 
     &:hover {
-      background-color: var(--c-empty);
+      background-color: transparent;
     }
   }
 
   .el-menu-item.is-active {
-    background-color: var(--c-empty);
+    background-color: transparent;
     color: var(--el-color-primary);
   }
 
@@ -50,11 +50,11 @@
       }
 
       &:hover {
-        background-color: var(--c-empty);
+        background-color: transparent;
       }
     }
     .el-menu {
-      background-color: var(--c-empty);
+      background-color: transparent;
 
       .el-menu-item, .el-sub-menu__title {
         text-indent: 9px;
@@ -70,7 +70,7 @@
     padding: 0;
 
     .el-sub-menu.is-active {
-      // background-color: var(--c-bg-mute);
+
       .el-icon {
         color: var(--el-color-primary);
       }

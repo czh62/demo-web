@@ -131,7 +131,7 @@ getCookie()
     background-size: contain;
 
     .form-wrapper {
-      background-color: var(--c-white);
+      background-color: var(--el-color-white);
       width: 390px;
       padding: 20px 30px;
     }

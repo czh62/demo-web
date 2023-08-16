@@ -29,7 +29,7 @@ const collapsed = inject('collapsed')
 
   span {
     font-size: 18px;
-    color: var(--c-text-main);
+    color: var(--el-text-color);
   }
 }
 </style>

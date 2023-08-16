@@ -118,7 +118,7 @@ watch(
       border-radius: 0;
       height: 27px;
       border: 0;
-      background-color: var(--c-empty);
+      background-color: transparent;
       border-right: var(--style-border);
 
       &.view-active {

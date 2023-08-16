@@ -1,7 +1,7 @@
 <template>
   <div class="header-wrapper">
     <div class="tool-wrapper__left">
-      <CollapseBlock class="mr20" />
+      <Collapse class="mr20" />
       <Breadcrumb />
     </div>
     <div class="tool-wrapper__right">
@@ -22,7 +22,7 @@
 
 <script setup>
 import { inject } from 'vue'
-import CollapseBlock from './components/CollapseBlock.vue'
+import Collapse from './components/Collapse.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import TagsView from './components/TagsView.vue'
 import Fullscreen from './components/Fullscreen.vue'
