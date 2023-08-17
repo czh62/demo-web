@@ -66,5 +66,10 @@ export default {
     show_logo: 'Show logo control',
     show_footer: 'Show footer control',
     show_tags_view: 'Show tab control'
+  },
+  error: {
+    back_home: 'Back',
+    error_403: 'Ah! The page you can\'t visit without enough permission～',
+    error_404: 'Ah! The page you are visiting does no exist~'
   }
 }

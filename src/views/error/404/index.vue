@@ -1,13 +1,31 @@
 <template>
   <div class="page-wrapper">
-    <el-text tag="i" type="danger">404 Not Found</el-text>
+    <el-result :sub-title="$t('error.error_404')">
+      <template #icon>
+        <el-image :src="img404" />
+      </template>
+      <template #extra>
+        <el-button type="primary" @click="back">{{ $t('error.back_home') }}</el-button>
+      </template>
+    </el-result>
   </div>
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+import img404 from '@/assets/images/404.png'
+
 defineOptions({ name: 'Page404' })
+
+const router = useRouter()
+
+const back = () => {
+  router.replace('/')
+}
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped lang="scss">
+.el-image {
+  width: 512px;
+}
 </style>

@@ -66,5 +66,10 @@ export default {
     show_logo: '是否显示logo控件',
     show_footer: '是否显示页脚控件',
     show_tags_view: '是否显示页签控件'
+  },
+  error: {
+    back_home: '回到首页',
+    error_403: '哎呀，您的权限不足以访问此页面呢～',
+    error_404: '哎呀，您所访问的页面不存在呢～'
   }
 }
