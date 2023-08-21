@@ -6,3 +6,10 @@
     margin-bottom: 0;
   }
 }
+
+// 清除水平表单的margin-bottom
+.el-form.clear-mb {
+  .el-form-item {
+    margin-bottom: 0;
+  }
+}

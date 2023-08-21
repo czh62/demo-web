@@ -16,8 +16,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
 import useAuthStore from '@/stores/modules/auth'
 
 defineOptions({ name: 'AppBreadcrumb' })

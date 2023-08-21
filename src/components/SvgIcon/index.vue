@@ -4,7 +4,7 @@
   </svg>
 </template>
 <script setup>
-import { computed } from 'vue'
+defineOptions({ name: 'AppSvgIcon' })
 
 const props = defineProps({
   icon: {

@@ -1,3 +1,5 @@
+// import dark mode scss
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
 @use './base.scss' as *;
 @use './nprogress.scss' as *;
 @use './transition.scss' as *;
@@ -62,6 +64,16 @@ body,
   display: flex;
 }
 
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fill {
+  flex: 1;
+}
+
 .jc-between {
   justify-content: space-between;
 }
@@ -92,4 +104,9 @@ body,
   .el-dropdown-link:focus {
     outline: none;
   }
+}
+
+.app-container {
+  background-color: var(--el-bg-color);
+  padding: 15px;
 }

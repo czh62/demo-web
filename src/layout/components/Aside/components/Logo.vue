@@ -6,8 +6,6 @@
 </template>
 
 <script setup>
-import { inject } from 'vue'
-
 defineOptions({ name: 'AppLogo' })
 
 const collapsed = inject('collapsed')

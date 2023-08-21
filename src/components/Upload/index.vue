@@ -24,8 +24,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
 /** 原生导入组件，兼容低版本浏览器所准备 */
 
 const uploadRef = ref(null)

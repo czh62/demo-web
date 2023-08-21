@@ -35,8 +35,6 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
 import useTagsViewStore from '@/stores/modules/tags-view'
 
 defineOptions({ name: 'AppTagsView' })

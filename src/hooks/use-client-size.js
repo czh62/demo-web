@@ -1,5 +1,3 @@
-import { onMounted, ref } from 'vue'
-
 // 防抖函数，避免重复触发事件
 const debounce = (fn, delay = 1000) => {
   let timer = null

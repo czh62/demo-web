@@ -16,7 +16,6 @@
 </template> 
 
 <script setup>
-import { computed } from 'vue'
 import useLayoutStore from '@/stores/modules/layout'
 
 defineOptions({ name: 'AppThemeDrawer' })

@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-import { computed, inject } from 'vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import useAppStore from '@/stores/modules/app'
 

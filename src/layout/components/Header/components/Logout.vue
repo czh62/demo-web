@@ -5,8 +5,6 @@
 </template>
 
 <script setup>
-import { ElMessageBox } from 'element-plus'
-import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import { removeToken } from '@/utils/cookie'

@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import useAppStore from '@/stores/modules/app'
 import { useI18n } from 'vue-i18n'

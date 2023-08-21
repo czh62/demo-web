@@ -4,7 +4,6 @@
 </template>
 
 <script setup>
-import { inject } from 'vue'
 import Menu from '../Menu/index.vue'
 import Logo from './components/Logo.vue'
 

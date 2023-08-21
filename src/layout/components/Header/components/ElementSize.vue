@@ -16,8 +16,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { ElMessageBox } from 'element-plus'
 import { useI18n } from 'vue-i18n'
 import useAppStore from '@/stores/modules/app'
 import SvgIcon from '@/components/SvgIcon/index.vue'

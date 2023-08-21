@@ -21,7 +21,6 @@
 </template>
 
 <script setup>
-import { inject } from 'vue'
 import Collapse from './components/Collapse.vue'
 import Breadcrumb from './components/Breadcrumb.vue'
 import TagsView from './components/TagsView.vue'

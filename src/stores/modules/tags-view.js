@@ -1,13 +1,11 @@
-import { defineStore } from 'pinia'
-import { reactive, toRefs } from 'vue'
 import useAuthStore from './auth'
 import useKeepAliveStore from './keep-alive'
-import router from '@/router'
 import { HOME_URL } from '@/router/modules/static-router'
 import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useTagsViewStore = defineStore('tags-view', () => {
   const keepAliveStore = useKeepAliveStore()
+  const router = useRouter()
 
   const state = reactive({
     tagsViewList: []

@@ -31,9 +31,3 @@
 
   .lh#{$i} { line-height: 1px * $i; }
 }
-
-@for $i from 10 through 30 {
-  .text#{$i} {
-    font-size: $i * 1px ;
-  }
-}

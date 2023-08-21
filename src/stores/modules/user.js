@@ -1,5 +1,3 @@
-import { reactive, toRefs } from 'vue'
-import { defineStore } from 'pinia'
 import { setToken } from '@/utils/cookie'
 
 const useUserStore = defineStore('user', () => {

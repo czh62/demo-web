@@ -7,7 +7,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 import ThemeDrawer from './ThemeDrawer.vue'
 

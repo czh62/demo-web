@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-import { ElMessageBox } from 'element-plus'
 import { useI18n } from 'vue-i18n'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 

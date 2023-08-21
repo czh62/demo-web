@@ -12,7 +12,6 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router'
 import img404 from '@/assets/images/404.png'
 
 defineOptions({ name: 'Page404' })

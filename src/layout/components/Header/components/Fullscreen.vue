@@ -5,7 +5,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import { useFullscreen } from '@vueuse/core'
 import SvgIcon from '@/components/SvgIcon/index.vue'
 

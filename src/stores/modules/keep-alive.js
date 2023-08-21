@@ -1,5 +1,3 @@
-import { ref } from 'vue'
-import { defineStore } from 'pinia'
 import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useKeepAliveStore = defineStore('keep-alive', () => {

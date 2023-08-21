@@ -16,7 +16,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // 此属性具有兼容性问题，请注意浏览器版本是否支持该属性，必要时请使用margin代替
         border-bottom: var(--style-border);
       }
 
@@ -31,6 +30,7 @@
       padding: 15px;
       box-sizing: border-box;
       overflow-x: hidden;
+      background-color: var(--el-bg-color-page);
     }
 
     .el-footer {
@@ -40,6 +40,16 @@
       color: var(--el-text-color-secondary);
       text-align: center;
       padding: 0 20px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top: var(--style-border);
+      }
     }
   }
 }
