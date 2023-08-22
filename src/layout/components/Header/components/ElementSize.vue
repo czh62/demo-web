@@ -27,19 +27,6 @@ const appStore = useAppStore()
 const size = computed(() => appStore.size)
 
 const handleSizeChange = command => {
-  ElMessageBox.confirm(
-    t('message_box.size'),
-    t('common.tips'),
-    {
-      confirmButtonText: t('common.confirm'),
-      cancelButtonText: t('common.cancel'),
-      buttonSize: 'default'
-    }
-  )
-  .then(() => {
-    appStore.sizeChange(command)
-    location.reload()
-  })
-  .catch(() => {})
+  appStore.sizeChange(command)
 }
 </script>
