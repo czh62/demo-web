@@ -55,7 +55,6 @@
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
 import Cookies from 'js-cookie'
 import { encrypt, decrypt } from '@/utils/jsencrypt'
 import Translate from '@/layout/components/Header/components/Translate.vue'
@@ -63,7 +62,6 @@ import useUserStore from '@/stores/modules/user'
 
 const router = useRouter()
 const userStore = useUserStore()
-const { t } = useI18n()
 
 const loginRef = ref(null)
 const form = reactive({
@@ -129,7 +127,7 @@ getCookie()
     background-size: contain;
 
     .form-wrapper {
-      background-color: var(--el-color-white);
+      background-color: var(--el-bg-color);
       width: 390px;
       padding: 20px 30px;
     }

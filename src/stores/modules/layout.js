@@ -3,7 +3,7 @@ import usePersistedstate from '@/plugins/use-persistedstate'
 const useLayoutStore = defineStore('layout', () => {
   const state = reactive({
     showLogo: false,
-    showFooter: false,
+    showFooter: true,
     showHeader: true,
     showTagsView: true
   })

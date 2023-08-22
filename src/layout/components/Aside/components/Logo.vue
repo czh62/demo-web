@@ -22,7 +22,7 @@ const collapsed = inject('collapsed')
   cursor: pointer;
 
   img {
-    width: 40px;
+    width: 32px;
   }
 
   span {
