@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { getToken } from './cookie'
+import errorCode from '../config/error-code'
 
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 
@@ -24,7 +25,21 @@ request.interceptors.request.use(
 
 // 响应拦截器
 request.interceptors.response.use(
-  res => res.data,
+  res => {
+    // 如果返回二进制数据，则不做处理
+    const responseTypes = ['blob', 'arraybuffer']
+    if (responseTypes.includes(res.request.responseType)) return res.data
+
+    const code = res.data.code || 200
+    const msg = res.data.message || errorCode[code] || errorCode['default']
+
+    if (code !== 200) {
+      ElMessage.error(msg)
+      return Promise.reject(new Error(msg))
+    }
+
+    return res.data
+  },
   err => Promise.reject(err)
 )
 
