@@ -9,7 +9,7 @@
           <Header />
         </el-header>
         <Main />
-        <el-footer v-if="showFooter">2023 ©️ BASE VUE PROJECT USE VITE.</el-footer>
+        <el-footer v-if="showFooter">2024 ©️ LHR NB</el-footer>
       </el-container>
     </el-container>
   </div>

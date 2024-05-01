@@ -8,7 +8,7 @@
       "component": "/home/index.vue",
       "meta": {
         "icon": "HomeFilled",
-				"title": "router.home_page",
+        "title": "router.home_page",
         "isFull": false,
         "isAffix": true,
         "isKeepAlive": true

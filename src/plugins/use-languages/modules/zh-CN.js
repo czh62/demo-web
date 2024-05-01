@@ -15,7 +15,17 @@ export default {
   },
   // 菜单配置
   router: {
-    home_page: '系统首页'
+    home_page: '系统首页',
+    vehicle_registration: '车辆注册',
+    vehicle_maintenance_records: '车辆维护记录',
+    vehicle_accident_records: '车辆事故记录',
+    vehicle_sale_records: '车辆销售记录',
+    vehicle_owner_info: '车主信息',
+    user_info: '用户信息',
+    vehicle_running_data_query:'车辆运行数据查询',
+    vehicle_info_sharing_input: '车辆信息共享录入',
+    security_settings:'安全与隐私设置',
+    vehicle_running_data_analysis :"车辆行驶数据分析"
   },
   // 语言类型配置
   language: {

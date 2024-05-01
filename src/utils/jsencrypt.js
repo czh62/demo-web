@@ -1,6 +1,5 @@
 import { JSEncrypt } from 'jsencrypt'
 
-// http://web.chacuo.net/netrsakeypair
 
 // public key
 const PUBLIC_KEY = `

@@ -7,13 +7,13 @@
     <div class="tool-wrapper__right">
       <Welcome />
       <el-divider direction="vertical"></el-divider>
-      <ThemeMode class="mr15" />
-      <Translate class="mr15" />
+<!--      <ThemeMode class="mr15" />-->
+<!--      <Translate class="mr15" />-->
       <ElementSize class="mr15" />
-      <Skin class="mr15" />
+<!--      <Skin class="mr15" />-->
       <Fullscreen />
       <el-divider direction="vertical"></el-divider>
-      <Clean class="mr15" />
+<!--      <Clean class="mr15" />-->
       <Logout />
     </div>
   </div>

@@ -39,7 +39,7 @@
             <el-button type="primary" auto-insert-space @click="login">{{
               $t('login.sign_in')
             }}</el-button>
-            <el-button plain type="default" auto-insert-space @click="reset">{{
+            <el-button plain auto-insert-space @click="reset">{{
               $t('common.reset')
             }}</el-button>
           </el-form-item>
@@ -82,7 +82,7 @@ const login = () => {
   loginRef.value.validate(valid => {
     if (valid) {
       setCookie()
-      userStore.login().then(() => {
+      userStore.login(form).then(() => {
         router.push('/')
       })
     }
@@ -102,7 +102,7 @@ const setCookie = () => {
 }
 
 const getCookie = () => {
-  form.remember = Cookies.get('remember') ? true : false
+  form.remember = !!Cookies.get('remember')
   form.username = Cookies.get('username') || undefined
   form.password = decrypt(Cookies.get('password')) || undefined
 }

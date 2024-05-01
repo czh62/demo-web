@@ -1,7 +1,7 @@
 <template>
   <div class="logo-wrapper">
-    <img src="@/assets/images/logo.svg" />
-    <el-text truncated v-if="!collapsed">BASE PROJECT</el-text>
+    <img src="@/assets/images/logo.png"  alt="logo"/>
+    <el-text truncated v-if="!collapsed">Menu</el-text>
   </div>
 </template>
 
