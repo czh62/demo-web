@@ -13,7 +13,7 @@
       </el-row>
       <el-row v-loading="loading">
         <el-col :span="24">
-          <el-table :data="tableData" style="width: 100%">
+          <el-table :data="tableData" style="width: 100%" stripe>
             <el-table-column fixed prop="engineModel" label="发动机型号" min-width="200" />
             <el-table-column prop="manufacturer" label="生产企业" min-width="200" />
             <el-table-column prop="displacement" label="发动机排量" min-width="120" />

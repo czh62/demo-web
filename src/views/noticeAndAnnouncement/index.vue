@@ -13,17 +13,17 @@
       </el-row>
       <el-row v-loading="loading">
         <el-col :span="24">
-          <el-table :data="tableData" style="width: 100%">
+          <el-table :data="tableData" style="width: 100%" stripe>
             <el-table-column fixed prop="id" label="序号" min-width="60" />
             <el-table-column fixed prop="title" label="标题" min-width="120" />
             <el-table-column fixed prop="content" label="内容" min-width="200" />
           </el-table>
+          <el-pagination
+            style="justify-content: flex-end; margin-top: 20px"
+            layout="prev, pager, next"
+            :total="count"
+          />
         </el-col>
-        <el-pagination
-          style="justify-content: flex-end; margin-top: 20px"
-          layout="prev, pager, next"
-          :total="count"
-        />
       </el-row>
       <el-dialog
         v-model="addDialogVisible"

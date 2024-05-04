@@ -13,7 +13,7 @@
       </el-row>
       <el-row v-loading="loading">
         <el-col :span="24">
-          <el-table :data="tableData" style="width: 100%">
+          <el-table :data="tableData" style="width: 100%" stripe>
             <el-table-column fixed prop="userName" label="用户名" min-width="120">
               <template #default="scope">
                 <el-popover effect="light" trigger="hover" placement="top" width="auto">

@@ -13,7 +13,7 @@
       </el-row>
       <el-row v-loading="loading">
         <el-col :span="24">
-          <el-table :data="tableData" style="width: 100%">
+          <el-table :data="tableData" style="width: 100%" stripe>
             <el-table-column fixed prop="engineStatus" label="发动机状态" min-width="120" />
             <el-table-column prop="brakeStatus" label="刹车状态" min-width="120" />
             <el-table-column prop="tirePressure" label="轮胎压力" min-width="120" />

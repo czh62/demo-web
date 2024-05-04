@@ -13,7 +13,7 @@
       </el-row>
       <el-row v-loading="loading">
         <el-col :span="24">
-          <el-table :data="tableData" style="width: 100%">
+          <el-table :data="tableData" style="width: 100%" stripe>
             <el-table-column fixed prop="carNumber" label="车牌号" min-width="120" />
             <el-table-column prop="auditState" label="审核" min-width="120" />
             <el-table-column prop="vehicleIdentifyNumber" label="车架号" min-width="200" />
