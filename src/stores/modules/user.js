@@ -1,5 +1,6 @@
 import { setToken } from '@/utils/cookie'
 import request from '@/utils/request'
+import { ElMessage } from 'element-plus'
 
 const useUserStore = defineStore('user', () => {
 
@@ -24,12 +25,10 @@ const useUserStore = defineStore('user', () => {
         const token = response.data.token
         // 存储Token，例如存入cookie
         setToken(token)
-        console.log('login form:', form)
+        ElMessage.success('登录成功')
         // 更新状态放在Promise被resolve后执行
         resolve()
       }).catch(error => {
-        // 登录失败，处理错误
-        console.error('Login failed:', error)
         // 可以根据需要 reject Promise 或进行其他错误处理
         reject(error)
       }).finally(() => {

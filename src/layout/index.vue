@@ -29,6 +29,7 @@ const showHeader = computed(() => layoutStore.showHeader)
 const showFooter = computed(() => layoutStore.showFooter)
 const showLogo = computed(() => layoutStore.showLogo)
 const showTagsView = computed(() => layoutStore.showTagsView)
+const showWelcome = computed(() => layoutStore.showWelcome)
 
 const appStore = useAppStore()
 const collapsed = computed(() => appStore.collapsed)
@@ -37,6 +38,7 @@ const collapsed = computed(() => appStore.collapsed)
 provide('showLogo', showLogo)
 provide('showHeader', showHeader)
 provide('showTagsView', showTagsView)
+provide('showWelcome', showWelcome)
 provide('collapsed', collapsed)
 </script>
 

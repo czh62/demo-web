@@ -21,7 +21,6 @@ const useAuthStore = defineStore('auth', () => {
 
   // 获取动态菜单列表
   const getDynamicMenuList = async () => {
-    console.log('getDynamicMenuList')
     const res = await request.post('/api/menuList')
     state.dynamicMenuList = res.data
   }

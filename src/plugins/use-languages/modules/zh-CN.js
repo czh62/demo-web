@@ -16,16 +16,13 @@ export default {
   // 菜单配置
   router: {
     home_page: '系统首页',
-    vehicle_registration: '车辆注册',
-    vehicle_maintenance_records: '车辆维护记录',
-    vehicle_accident_records: '车辆事故记录',
-    vehicle_sale_records: '车辆销售记录',
-    vehicle_owner_info: '车主信息',
-    user_info: '用户信息',
-    vehicle_running_data_query:'车辆运行数据查询',
-    vehicle_info_sharing_input: '车辆信息共享录入',
-    security_settings:'安全与隐私设置',
-    vehicle_running_data_analysis :"车辆行驶数据分析"
+    vehicle_management: '车辆信息管理',
+    engine_information_management: '发动机信息管理',
+    vehicle_type_management: '车型信息管理',
+    user_management: '用户管理',
+    vehicle_fault_history: '车辆故障历史',
+    vehicle_driving_data: '车辆行驶数据',
+    notice_and_announcement: '通知公告'
   },
   // 语言类型配置
   language: {
@@ -75,7 +72,8 @@ export default {
   layout_setting: {
     show_logo: '是否显示logo控件',
     show_footer: '是否显示页脚控件',
-    show_tags_view: '是否显示页签控件'
+    show_tags_view: '是否显示页签控件',
+    show_welcome: '是否显示欢迎信息'
   },
   error: {
     back_home: '回到首页',

@@ -5,7 +5,8 @@ const useLayoutStore = defineStore('layout', () => {
     showLogo: true,
     showFooter: true,
     showHeader: true,
-    showTagsView: true
+    showTagsView: true,
+    showWelcome: true,
   })
 
   return {

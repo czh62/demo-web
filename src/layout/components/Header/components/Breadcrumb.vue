@@ -4,7 +4,7 @@
       <TransitionGroup name="breadcrumb" mode="out-in" tag="el-breadcrumb-item">
         <template v-if="breadcrumbList">
           <el-breadcrumb-item v-for="(item, index) in breadcrumbList" :key="item.path">
-						<el-text size="default" tag="b">{{$t(item.meta.title)}}</el-text>
+						<el-text truncated size="default" tag="b">{{$t(item.meta.title)}}</el-text>
 					</el-breadcrumb-item>
         </template>
       </TransitionGroup>

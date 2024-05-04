@@ -1,6 +1,8 @@
 import axios from 'axios'
-import { getToken } from './cookie'
+import { getToken, removeToken } from './cookie'
 import errorCode from '../config/error-code'
+import { ElMessage } from 'element-plus'
+import router from '@/router'
 
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 
@@ -39,6 +41,15 @@ request.interceptors.response.use(
 
     if (code !== 200) {
       ElMessage.error(msg)
+      if (code === 401) {
+        localStorage.removeItem('keep-alive')
+        localStorage.removeItem('tags-view')
+        localStorage.removeItem('layout')
+        localStorage.removeItem('app')
+        removeToken()
+        location.reload()
+        router.replace('/login')
+      }
       return Promise.reject(new Error(msg))
     }
 

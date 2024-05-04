@@ -1,8 +1,8 @@
 <template>
   <div class="page-wrapper">
-    <div class="translate">
-      <Translate />
-    </div>
+<!--    <div class="translate">-->
+<!--      <Translate />-->
+<!--    </div>-->
     <div class="login-wrapper">
       <div class="form-wrapper">
         <div class="tc m30">
@@ -45,8 +45,8 @@
           </el-form-item>
           <el-form-item>
             <el-divider></el-divider>
-            <el-button link type="primary">{{ $t('login.sign_up') }}</el-button>
-            <el-button link type="primary">{{ $t('login.forget') }}</el-button>
+            <el-button link type="primary" @click="ElMessage.info('还没开发呢')">{{ $t('login.sign_up') }}</el-button>
+            <el-button link type="primary" @click="ElMessage.info('还没开发呢')">{{ $t('login.forget') }}</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -55,6 +55,7 @@
 </template>
 
 <script setup>
+import { ElMessage } from 'element-plus'
 import Cookies from 'js-cookie'
 import { encrypt, decrypt } from '@/utils/jsencrypt'
 import Translate from '@/layout/components/Header/components/Translate.vue'

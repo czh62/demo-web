@@ -4,13 +4,17 @@
       <el-text size="default">{{ $t('layout_setting.show_logo') }}</el-text>
       <el-switch v-model="layoutStore.showLogo"></el-switch>
     </div>
-    <div class="flex jc-between ai-center">
-      <el-text size="default">{{ $t('layout_setting.show_tags_view') }}</el-text>
-      <el-switch v-model="layoutStore.showTagsView"></el-switch>
-    </div>
+<!--    <div class="flex jc-between ai-center">-->
+<!--      <el-text size="default">{{ $t('layout_setting.show_tags_view') }}</el-text>-->
+<!--      <el-switch v-model="layoutStore.showTagsView"></el-switch>-->
+<!--    </div>-->
     <div class="flex jc-between ai-center">
       <el-text size="default">{{ $t('layout_setting.show_footer') }}</el-text>
       <el-switch v-model="layoutStore.showFooter"></el-switch>
+    </div>
+    <div class="flex jc-between ai-center">
+      <el-text size="default">{{ $t('layout_setting.show_welcome') }}</el-text>
+      <el-switch v-model="layoutStore.showWelcome"></el-switch>
     </div>
   </el-drawer>
 </template> 

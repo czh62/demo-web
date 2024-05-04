@@ -5,12 +5,12 @@
       <Breadcrumb />
     </div>
     <div class="tool-wrapper__right">
-      <Welcome />
+      <Welcome v-if="showWelcome" />
       <el-divider direction="vertical"></el-divider>
 <!--      <ThemeMode class="mr15" />-->
 <!--      <Translate class="mr15" />-->
-      <ElementSize class="mr15" />
-<!--      <Skin class="mr15" />-->
+<!--      <ElementSize class="mr15" />-->
+      <Skin class="mr15" />
       <Fullscreen />
       <el-divider direction="vertical"></el-divider>
 <!--      <Clean class="mr15" />-->
@@ -36,6 +36,8 @@ import Welcome from './components/Welcome.vue'
 defineOptions({ name: 'AppLayoutHeader '})
 
 const showTagsView = inject('showTagsView')
+const showWelcome = inject('showWelcome')
+console.log(showWelcome)
 </script>
 
 <style lang="scss" scoped>
