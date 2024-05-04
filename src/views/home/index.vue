@@ -6,7 +6,7 @@
           <el-text style="font-size: 2em">公告</el-text>
         </el-col>
       </el-row>
-      <el-row>
+      <el-row v-loading="loading">
         <el-col :span="24">
           <el-carousel trigger="click" height="400px">
             <el-carousel-item v-for="item in noticeData" :key="item">
@@ -57,13 +57,26 @@
 
 
 <script setup>
+import request from '@/utils/request'
+
 defineOptions({ name: 'PageHome' })
 
-const noticeData = ref([{
-  title: '公告1',
-  content: '这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容这是公告1的内容'
-}, {
-  title: '公告2',
-  content: '这是公告2的内容'
-}])
+const noticeData = ref([])
+const loading = ref(false)
+
+const fetchData = () => {
+  loading.value = true
+  request({
+    url: 'api/noticeAndAnnouncementList',
+    method: 'post'
+  }).then(response => {
+    noticeData.value = response.data
+  }).catch(error => {
+
+  }).finally(() => {
+    loading.value = false
+  })
+}
+
+fetchData()
 </script>

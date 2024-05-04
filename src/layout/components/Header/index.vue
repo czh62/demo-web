@@ -37,7 +37,6 @@ defineOptions({ name: 'AppLayoutHeader '})
 
 const showTagsView = inject('showTagsView')
 const showWelcome = inject('showWelcome')
-console.log(showWelcome)
 </script>
 
 <style lang="scss" scoped>
