@@ -1,6 +1,6 @@
 # demo-web
 
-This is a demo web application built with Vue.js and Tailwind CSS.`
+This is a demo web application built with Vue.js and Element-ui.
 
 ## 环境要求
 
